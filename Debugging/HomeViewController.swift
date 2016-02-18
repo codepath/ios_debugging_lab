@@ -41,7 +41,7 @@ class HomeViewController: UIViewController, GameLevelViewControllerDelegate {
     }
     
     func didFinishLevel() {
-        userDefaults.setInteger(self.currentLevel, forKey: lastLevelCompletedKey)
+        userDefaults.setInteger(self.currentLevel + 1, forKey: lastLevelCompletedKey)
         userDefaults.synchronize()
         
         if self.currentLevel == self.levels.count - 1 {
