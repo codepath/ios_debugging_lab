@@ -31,7 +31,7 @@ class HomeViewController: UIViewController, GameLevelViewControllerDelegate {
         super.viewDidLoad()
         
         // Sets to level zero if no progress saved
-        //self.currentLevel = userDefaults.integerForKey(lastLevelCompletedKey)
+        self.currentLevel = userDefaults.integerForKey(lastLevelCompletedKey)
         
         self.detailsLabel.text = "Welcome to the Debugging Game! This game has \(self.levels.count) levels. Each level has a bug. It is your responsibility to debug each issue and fix it to advance to the next level."
     }
