@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Bdy-6H-AFl">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="xXs-aH-1fb">
+            <objects>
+                <viewController id="2sv-TF-dif" customClass="HomeViewController" customModule="Debugging" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VWq-wx-Xkx"/>
+                        <viewControllerLayoutGuide type="bottom" id="4cw-IN-1UY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fNQ-tN-37l">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Debugging Lab" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JWD-R1-AqX">
+                                <rect key="frame" x="101" y="125" width="117" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pBK-ro-vd2">
+                                <rect key="frame" x="21" y="366" width="279" height="102"/>
+                                <string key="text">Welcome to the Debugging Game! This game has x levels. Each level has a bug. It is your responsibility to debug each issue and fix it to advance to the next level.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SnI-uW-CEc">
+                                <rect key="frame" x="103" y="498" width="113" height="30"/>
+                                <state key="normal" title="Let's get started"/>
+                                <connections>
+                                    <action selector="startGameTapped:" destination="2sv-TF-dif" eventType="touchUpInside" id="Tcw-EE-bxz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="pBK-ro-vd2" firstAttribute="centerX" secondItem="fNQ-tN-37l" secondAttribute="centerX" id="BsE-v8-W6t"/>
+                            <constraint firstItem="JWD-R1-AqX" firstAttribute="centerX" secondItem="fNQ-tN-37l" secondAttribute="centerX" id="RlK-h6-h7W"/>
+                            <constraint firstItem="SnI-uW-CEc" firstAttribute="centerX" secondItem="fNQ-tN-37l" secondAttribute="centerX" id="iqp-NY-zux"/>
+                            <constraint firstItem="4cw-IN-1UY" firstAttribute="top" secondItem="SnI-uW-CEc" secondAttribute="bottom" constant="40" id="mU0-RO-Awx"/>
+                            <constraint firstItem="JWD-R1-AqX" firstAttribute="top" secondItem="VWq-wx-Xkx" secondAttribute="bottom" constant="105" id="rXy-u8-gSm"/>
+                            <constraint firstItem="SnI-uW-CEc" firstAttribute="top" secondItem="pBK-ro-vd2" secondAttribute="bottom" constant="30" id="tNw-Jj-qEm"/>
+                            <constraint firstItem="pBK-ro-vd2" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="fNQ-tN-37l" secondAttribute="leading" constant="20" id="wog-VR-NzV"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="pBK-ro-vd2" secondAttribute="trailing" constant="20" id="zCc-bz-bCu"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="lfq-2n-UGo"/>
+                    <connections>
+                        <outlet property="detailsLabel" destination="pBK-ro-vd2" id="2z5-o7-tHF"/>
+                        <outlet property="titleLabel" destination="JWD-R1-AqX" id="12w-lC-gG7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pjT-Ki-ggc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="286" y="755"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="og4-K9-02A">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="Bdy-6H-AFl" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="cLn-XC-Zak">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="Man-dD-fOZ">
+                        <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="2sv-TF-dif" kind="relationship" relationship="rootViewController" id="nJ4-HJ-hHS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iSc-gc-laj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-246" y="755"/>
+        </scene>
+    </scenes>
+</document>

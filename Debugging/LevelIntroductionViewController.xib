@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LevelIntroductionViewController" customModule="Debugging" customModuleProvider="target">
+            <connections>
+                <outlet property="detailedDescriptionLabel" destination="v4f-h2-Ims" id="at0-8M-C7e"/>
+                <outlet property="levelNumberLabel" destination="85B-Kb-ERd" id="dK1-U1-CqO"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YKL-VE-sFP">
+                    <rect key="frame" x="126" y="474" width="69" height="30"/>
+                    <state key="normal" title="Play Level"/>
+                    <connections>
+                        <action selector="playLevel:" destination="-1" eventType="touchUpInside" id="HL7-f5-aN9"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="X" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="85B-Kb-ERd">
+                    <rect key="frame" x="151" y="122" width="19" height="36"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Detailed Description of Level" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v4f-h2-Ims">
+                    <rect key="frame" x="16" y="222" width="288" height="20"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Level:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Ff-km-SLW">
+                    <rect key="frame" x="47" y="64" width="227" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="85B-Kb-ERd" firstAttribute="top" secondItem="2Ff-km-SLW" secondAttribute="bottom" constant="24" id="5j5-uI-C8F"/>
+                <constraint firstItem="v4f-h2-Ims" firstAttribute="top" secondItem="85B-Kb-ERd" secondAttribute="bottom" constant="64" id="Jzu-xJ-P08"/>
+                <constraint firstAttribute="trailing" secondItem="v4f-h2-Ims" secondAttribute="trailing" constant="16" id="TUo-vc-URs"/>
+                <constraint firstItem="2Ff-km-SLW" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="VGF-by-iCm"/>
+                <constraint firstItem="85B-Kb-ERd" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ZcW-9m-EU9"/>
+                <constraint firstItem="v4f-h2-Ims" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="eVH-fn-o4Y"/>
+                <constraint firstAttribute="bottom" secondItem="YKL-VE-sFP" secondAttribute="bottom" constant="64" id="j4v-L1-Um8"/>
+                <constraint firstItem="YKL-VE-sFP" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="soL-Dd-Iug"/>
+                <constraint firstItem="2Ff-km-SLW" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="xYJ-QH-LYi"/>
+            </constraints>
+            <point key="canvasLocation" x="260" y="455"/>
+        </view>
+    </objects>
+</document>
