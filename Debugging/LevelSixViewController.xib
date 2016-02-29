@@ -39,7 +39,7 @@
                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Only Tap on &quot;Finish Level&quot; once you've fixed the AutoLayout exception that shows up in the output window." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sf1-Rj-TbY">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Only Tap on &quot;Complete Level&quot; once you've fixed the AutoLayout exception that shows up in the output window." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sf1-Rj-TbY">
                     <rect key="frame" x="20" y="240" width="280" height="80"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="280" id="WFt-ee-EXR"/>
