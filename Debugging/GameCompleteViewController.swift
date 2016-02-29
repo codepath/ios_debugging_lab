@@ -21,6 +21,9 @@ class GameCompleteViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return UIStatusBarStyle.LightContent;
+    }
 
     /*
     // MARK: - Navigation
@@ -31,5 +34,4 @@ class GameCompleteViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
 }

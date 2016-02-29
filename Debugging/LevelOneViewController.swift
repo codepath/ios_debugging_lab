@@ -17,10 +17,10 @@ class LevelOneViewController: GameLevelViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.levelTitleLabel.textColor = self.gameLevel.accentColor
-        self.finishLevelButton2.backgroundColor = self.gameLevel.accentColor
 
         // Do any additional setup after loading the view.
+        self.levelTitleLabel.textColor = self.gameLevel.accentColor
+        self.finishLevelButton2.backgroundColor = self.gameLevel.accentColor
     }
 
     override func preferredStatusBarStyle() -> UIStatusBarStyle {

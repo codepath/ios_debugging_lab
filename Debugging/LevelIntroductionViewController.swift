@@ -27,7 +27,7 @@ class LevelIntroductionViewController: UIViewController {
     }
     
     @IBAction func playLevel(sender: AnyObject) {
-        self.navigationController?.pushViewController(self.gameLevel.viewController, animated: true)
+        self.navigationController?.pushViewController(self.gameLevel.viewController, animated: false)
     }
 
     override func preferredStatusBarStyle() -> UIStatusBarStyle {

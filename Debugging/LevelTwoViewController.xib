@@ -25,21 +25,21 @@
                         <constraint firstAttribute="height" constant="50" id="dbd-uX-Imd"/>
                     </constraints>
                     <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="18"/>
-                    <state key="normal" title="COMPLETE LEVEL">
+                    <state key="normal" title="YOU GOT IT!">
                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
                     <connections>
                         <action selector="finishLevelTapped:" destination="-1" eventType="touchUpInside" id="scD-2g-tBB"/>
                     </connections>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uot-cx-6z1">
-                    <rect key="frame" x="16" y="276" width="288" height="17"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uot-cx-6z1">
+                    <rect key="frame" x="16" y="240" width="288" height="89"/>
                     <attributedString key="attributedText">
                         <fragment content="Label">
                             <attributes>
                                 <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <font key="NSFont" size="17" name="Courier"/>
-                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                <font key="NSFont" size="20" name="Courier-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                             </attributes>
                         </fragment>
                     </attributedString>
@@ -59,7 +59,7 @@
             <constraints>
                 <constraint firstItem="Ip5-Vf-cEa" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="5gv-6n-aLg"/>
                 <constraint firstItem="2l6-zM-PfM" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="6fZ-h3-PWQ"/>
-                <constraint firstItem="uot-cx-6z1" firstAttribute="top" secondItem="Ip5-Vf-cEa" secondAttribute="bottom" constant="116" id="Acu-3k-ma1"/>
+                <constraint firstItem="uot-cx-6z1" firstAttribute="top" secondItem="Ip5-Vf-cEa" secondAttribute="bottom" constant="80" id="Acu-3k-ma1"/>
                 <constraint firstItem="uot-cx-6z1" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="I5s-gL-wzW"/>
                 <constraint firstItem="uot-cx-6z1" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="XzR-Az-Bip"/>
                 <constraint firstItem="Ip5-Vf-cEa" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="120" id="lS0-kv-kId"/>

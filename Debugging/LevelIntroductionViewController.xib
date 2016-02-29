@@ -20,21 +20,21 @@
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YKL-VE-sFP">
                     <rect key="frame" x="0.0" y="478" width="321" height="50"/>
-                    <color key="backgroundColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="cHo-rY-I5f"/>
                     </constraints>
                     <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="18"/>
-                    <state key="normal" title="PLAY LEVEL">
+                    <state key="normal" title="PLAY">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
                         <action selector="playLevel:" destination="-1" eventType="touchUpInside" id="HL7-f5-aN9"/>
                     </connections>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Detailed Description of Level" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v4f-h2-Ims">
-                    <rect key="frame" x="16" y="236" width="288" height="15"/>
-                    <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="15"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Detailed Description of Level" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v4f-h2-Ims">
+                    <rect key="frame" x="20" y="236" width="280" height="15"/>
+                    <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="16"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
@@ -54,9 +54,9 @@
                 <constraint firstItem="85B-Kb-ERd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="45" id="Hc8-1q-ckl"/>
                 <constraint firstItem="v4f-h2-Ims" firstAttribute="top" secondItem="85B-Kb-ERd" secondAttribute="bottom" constant="80" id="Jzu-xJ-P08"/>
                 <constraint firstItem="85B-Kb-ERd" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="120" id="QWz-eF-Z2d"/>
-                <constraint firstAttribute="trailing" secondItem="v4f-h2-Ims" secondAttribute="trailing" constant="16" id="TUo-vc-URs"/>
+                <constraint firstAttribute="trailing" secondItem="v4f-h2-Ims" secondAttribute="trailing" constant="20" id="TUo-vc-URs"/>
                 <constraint firstItem="85B-Kb-ERd" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ZcW-9m-EU9"/>
-                <constraint firstItem="v4f-h2-Ims" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="eVH-fn-o4Y"/>
+                <constraint firstItem="v4f-h2-Ims" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="eVH-fn-o4Y"/>
                 <constraint firstAttribute="bottom" secondItem="YKL-VE-sFP" secondAttribute="bottom" constant="40" id="j4v-L1-Um8"/>
                 <constraint firstItem="YKL-VE-sFP" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="soL-Dd-Iug"/>
                 <constraint firstItem="YKL-VE-sFP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="yFq-v3-sps"/>

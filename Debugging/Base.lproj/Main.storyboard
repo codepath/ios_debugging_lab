@@ -18,9 +18,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pBK-ro-vd2">
-                                <rect key="frame" x="20" y="234" width="279" height="90"/>
+                                <rect key="frame" x="20" y="234" width="279" height="96"/>
                                 <string key="text">Welcome to the Debugging Game! This game has x levels. Each level has a bug. It is your responsibility to debug each issue and fix it to advance to the next level.</string>
-                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="15"/>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="16"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>

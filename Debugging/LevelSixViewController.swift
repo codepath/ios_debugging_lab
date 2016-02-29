@@ -11,9 +11,19 @@ import UIKit
 // Unsatisfiable VFL constraints
 class LevelSixViewController: GameLevelViewController {
 
+    @IBOutlet weak var finishLevelButton: UIButton!
+    @IBOutlet weak var levelTitleLabel: UILabel!
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.levelTitleLabel.textColor = self.gameLevel.accentColor
+        self.finishLevelButton.backgroundColor = self.gameLevel.accentColor
+
+    }
+
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return UIStatusBarStyle.LightContent;
     }
 }
