@@ -12,9 +12,13 @@ import UIKit
 class LevelTwoViewController: GameLevelViewController {
     
     @IBOutlet weak var attributedLabel: UILabel!
+    @IBOutlet weak var levelTitleLabel: UILabel!
+    @IBOutlet weak var finishLevelButton: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.levelTitleLabel.textColor = self.gameLevel.accentColor
+        self.finishLevelButton.backgroundColor = self.gameLevel.accentColor
         
         let myString = NSMutableAttributedString(string: "funWithAttributedStrings")
         myString.addAttribute(NSForegroundColorAttributeName, value: UIColor.redColor(), range: NSMakeRange(0, 3))
@@ -22,5 +26,9 @@ class LevelTwoViewController: GameLevelViewController {
         myString.addAttribute(NSForegroundColorAttributeName, value: UIColor.blueColor(), range: NSMakeRange(7, 10))
         myString.addAttribute(NSForegroundColorAttributeName, value: UIColor.orangeColor(), range: NSMakeRange(17, 8))
         self.attributedLabel.attributedText = myString
-    }    
+    }
+
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return UIStatusBarStyle.LightContent;
+    }
 }

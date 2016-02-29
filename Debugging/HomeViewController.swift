@@ -19,12 +19,12 @@ class HomeViewController: UIViewController, GameLevelViewControllerDelegate {
     var currentLevel = 0
 
     let levels = [
-        GameLevel(number: 1, viewController: LevelOneViewController(), detailedDescription: "The dreaded key-value coding compliant error! This level shows you how to debug a key-value coding compliant error. If you can prevent the next view controller from crashing, you'll pass the level!"),
-        GameLevel(number: 2, viewController: LevelTwoViewController(), detailedDescription: "Uncaught exceptions! This level shows you how to debug an uncaught exception. If you can fix the crash in the next view controller, you'll pass the level!"),
-        GameLevel(number: 3, viewController: LevelThreeViewController(), detailedDescription: "My view doesn't respond to taps! We'll look at how to debug view layout issues. If you can tap on the `Finish Level` button, you'll pass the level!"),
-        GameLevel(number: 4, viewController: LevelFourViewController(), detailedDescription: "Where are my cells??? Figure out a way to get the tableView cells to show up to advance to the next level!"),
-        GameLevel(number: 5, viewController: LevelFiveViewController(), detailedDescription: "What's wrong with my cells? Figure out why the cells are wrong to advance to the next level!"),
-        GameLevel(number: 6, viewController: LevelSixViewController(), detailedDescription: "Unsatisfiable AutoLayout Constraints. Fix the AutoLayout constraints to advance to the next level!"),
+        GameLevel(number: 1, viewController: LevelOneViewController(), detailedDescription: "The dreaded key-value coding compliant error! This level shows you how to debug a key-value coding compliant error. If you can prevent the next view controller from crashing, you'll pass the level!", accentColor: HomeViewController.UIColorFromRGB(0xFF4981)),
+        GameLevel(number: 2, viewController: LevelTwoViewController(), detailedDescription: "Uncaught exceptions! This level shows you how to debug an uncaught exception. If you can fix the crash in the next view controller, you'll pass the level!", accentColor: HomeViewController.UIColorFromRGB(0xFF9500)),
+        GameLevel(number: 3, viewController: LevelThreeViewController(), detailedDescription: "My view doesn't respond to taps! We'll look at how to debug view layout issues. If you can tap on the `Finish Level` button, you'll pass the level!", accentColor: HomeViewController.UIColorFromRGB(0xFFCC00)),
+        GameLevel(number: 4, viewController: LevelFourViewController(), detailedDescription: "Where are my cells??? Figure out a way to get the tableView cells to show up to advance to the next level!", accentColor: HomeViewController.UIColorFromRGB(0x5AC8FB)),
+        GameLevel(number: 5, viewController: LevelFiveViewController(), detailedDescription: "What's wrong with my cells? Figure out why the cells are wrong to advance to the next level!", accentColor: HomeViewController.UIColorFromRGB(0xED4E86)),
+        GameLevel(number: 6, viewController: LevelSixViewController(), detailedDescription: "Unsatisfiable AutoLayout Constraints. Fix the AutoLayout constraints to advance to the next level!", accentColor: HomeViewController.UIColorFromRGB(0xED4E86))
     ]
     
     override func viewDidLoad() {
@@ -58,6 +58,7 @@ class HomeViewController: UIViewController, GameLevelViewControllerDelegate {
         introViewController.gameLevel = levels[currentLevel]
         
         let actualViewController = levels[currentLevel].viewController as GameLevelViewController
+        actualViewController.gameLevel = levels[currentLevel]
         actualViewController.delegate = self
         
         self.navigationController?.pushViewController(introViewController, animated: true)
@@ -66,5 +67,13 @@ class HomeViewController: UIViewController, GameLevelViewControllerDelegate {
     func launchGameComplete() {
         let vc = GameCompleteViewController()
         self.navigationController?.pushViewController(vc, animated: true)
+    }
+
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return UIStatusBarStyle.LightContent;
+    }
+
+    class func UIColorFromRGB(rgbValue: Int) -> UIColor {
+        return UIColor(red: ((CGFloat)((rgbValue & 0xFF0000) >> 16))/255.0, green: ((CGFloat)((rgbValue & 0x00FF00) >>  8))/255.0, blue: ((CGFloat)((rgbValue & 0x0000FF) >>  0))/255.0, alpha: 1.0)
     }
 }
