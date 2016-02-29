@@ -19,12 +19,12 @@ class HomeViewController: UIViewController, GameLevelViewControllerDelegate, Lev
     var currentLevel = 0
 
     let levels = [
-        GameLevel(number: 1, viewController: LevelOneViewController(), detailedDescription: "The dreaded key-value coding compliant error!\n\nThis level shows you how to debug a key-value coding compliant error. If you can prevent the next view controller from crashing, you'll pass the level!", accentColor: HomeViewController.UIColorFromRGB(0xFF2A68)),
+        GameLevel(number: 1, viewController: LevelOneViewController(), detailedDescription: "The dreaded key-value coding compliant error!\n\nThis level shows you how to debug a key-value coding compliant error. If you can prevent the next view controller from crashing, you'll pass the level!", accentColor: HomeViewController.UIColorFromRGB(0xFFCC00)),
         GameLevel(number: 2, viewController: LevelTwoViewController(), detailedDescription: "Uncaught exceptions!\n\nThis level shows you how to debug an uncaught exception. If you can fix the crash in the next view controller, you'll pass the level!", accentColor: HomeViewController.UIColorFromRGB(0xFF9500)),
-        GameLevel(number: 3, viewController: LevelThreeViewController(), detailedDescription: "My view doesn't respond to taps!\n\nWe'll look at how to debug view layout issues. If you can tap on the `Finish Level` button, you'll pass the level!", accentColor: HomeViewController.UIColorFromRGB(0xFFCC00)),
-        GameLevel(number: 4, viewController: LevelFourViewController(), detailedDescription: "Where are my cells???\n\nFigure out a way to get the tableView cells to show up to advance to the next level!", accentColor: HomeViewController.UIColorFromRGB(0x5AC8FB)),
-        GameLevel(number: 5, viewController: LevelFiveViewController(), detailedDescription: "What's wrong with my cells?\n\nFigure out why the cells are wrong to advance to the next level!", accentColor: HomeViewController.UIColorFromRGB(0x1D62F0)),
-        GameLevel(number: 6, viewController: LevelSixViewController(), detailedDescription: "Unsatisfiable AutoLayout Constraints.\n\nFix the AutoLayout constraints to advance to the next level!", accentColor: HomeViewController.UIColorFromRGB(0xC644FC))
+        GameLevel(number: 3, viewController: LevelThreeViewController(), detailedDescription: "My view doesn't respond to taps!\n\nWe'll look at how to debug view layout issues. If you can tap on the `Finish Level` button, you'll pass the level!", accentColor: HomeViewController.UIColorFromRGB(0xFF3B30)),
+        GameLevel(number: 4, viewController: LevelFourViewController(), detailedDescription: "Where are my cells???\n\nFigure out a way to get the tableView cells to show up to advance to the next level!", accentColor: HomeViewController.UIColorFromRGB(0xFF4981)),
+        GameLevel(number: 5, viewController: LevelFiveViewController(), detailedDescription: "What's wrong with my cells?\n\nFigure out why the cells are wrong to advance to the next level!", accentColor: HomeViewController.UIColorFromRGB(0xC644FC)),
+        GameLevel(number: 6, viewController: LevelSixViewController(), detailedDescription: "Unsatisfiable AutoLayout Constraints.\n\nFix the AutoLayout constraints to advance to the next level!", accentColor: HomeViewController.UIColorFromRGB(0x5AC8FB))
     ]
 
     override func viewDidLoad() {
