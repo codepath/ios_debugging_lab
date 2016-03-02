@@ -16,4 +16,8 @@ class LevelThreeViewController: GameLevelViewController {
 
         // Do any additional setup after loading the view.
     }
+
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return UIStatusBarStyle.LightContent;
+    }
 }

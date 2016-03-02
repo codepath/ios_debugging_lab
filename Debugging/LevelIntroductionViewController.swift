@@ -14,15 +14,23 @@ class LevelIntroductionViewController: UIViewController {
     
     @IBOutlet weak var levelNumberLabel: UILabel!
     @IBOutlet weak var detailedDescriptionLabel: UILabel!
+    @IBOutlet weak var playLevelButton: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.levelNumberLabel.text = String(self.gameLevel.number)
+        self.levelNumberLabel.text = "Level " + String(self.gameLevel.number)
+        self.detailedDescriptionLabel.numberOfLines = 0
         self.detailedDescriptionLabel.text = self.gameLevel.detailedDescription
+        self.levelNumberLabel.textColor = self.gameLevel.accentColor
+        self.playLevelButton.backgroundColor = self.gameLevel.accentColor
     }
     
     @IBAction func playLevel(sender: AnyObject) {
         self.navigationController?.pushViewController(self.gameLevel.viewController, animated: true)
+    }
+
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return UIStatusBarStyle.LightContent;
     }
 }

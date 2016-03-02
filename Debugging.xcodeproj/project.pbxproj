@@ -35,6 +35,8 @@
 		116A07871C75B0850068F39A /* MovieTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 116A07851C75B0850068F39A /* MovieTableViewCell.xib */; };
 		116A078A1C75B6920068F39A /* LevelOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116A07881C75B6920068F39A /* LevelOneViewController.swift */; };
 		116A078B1C75B6920068F39A /* LevelOneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 116A07891C75B6920068F39A /* LevelOneViewController.xib */; };
+		3A0C56DF1C8409B00021392B /* LevelCompleteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0C56DE1C8409B00021392B /* LevelCompleteViewController.swift */; };
+		3A0C56E11C8409D40021392B /* LevelCompleteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A0C56E01C8409D40021392B /* LevelCompleteViewController.xib */; };
 		4B415C46A059401019CAAEB8 /* Pods_Debugging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9068E26951E284FD9A8227C0 /* Pods_Debugging.framework */; };
 /* End PBXBuildFile section */
 
@@ -70,6 +72,8 @@
 		116A07881C75B6920068F39A /* LevelOneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LevelOneViewController.swift; sourceTree = "<group>"; };
 		116A07891C75B6920068F39A /* LevelOneViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LevelOneViewController.xib; sourceTree = "<group>"; };
 		1C83F76CFC77AA4CBA4ECC23 /* Pods-Debugging.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Debugging.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Debugging/Pods-Debugging.debug.xcconfig"; sourceTree = "<group>"; };
+		3A0C56DE1C8409B00021392B /* LevelCompleteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LevelCompleteViewController.swift; sourceTree = "<group>"; };
+		3A0C56E01C8409D40021392B /* LevelCompleteViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LevelCompleteViewController.xib; sourceTree = "<group>"; };
 		9068E26951E284FD9A8227C0 /* Pods_Debugging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Debugging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F66650C8636C2908FC6DE59B /* Pods-Debugging.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Debugging.release.xcconfig"; path = "Pods/Target Support Files/Pods-Debugging/Pods-Debugging.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -195,6 +199,8 @@
 			children = (
 				116A075F1C753E640068F39A /* GameLevel.swift */,
 				11687BA51C642F1700FA6720 /* HomeViewController.swift */,
+				3A0C56DE1C8409B00021392B /* LevelCompleteViewController.swift */,
+				3A0C56E01C8409D40021392B /* LevelCompleteViewController.xib */,
 				1143CB471C641A25008F767A /* GameLevelViewController.swift */,
 				1164417D1C6A919D006BE864 /* LevelIntroductionViewController.swift */,
 				1164417E1C6A919D006BE864 /* LevelIntroductionViewController.xib */,
@@ -288,6 +294,7 @@
 				116A078B1C75B6920068F39A /* LevelOneViewController.xib in Resources */,
 				11687BC71C6442ED00FA6720 /* LevelFiveViewController.xib in Resources */,
 				11687BAA1C643BBB00FA6720 /* Movies.json in Resources */,
+				3A0C56E11C8409D40021392B /* LevelCompleteViewController.xib in Resources */,
 				11687BCB1C64491C00FA6720 /* SimpleMovieTableViewCell.xib in Resources */,
 				1143CB501C641A25008F767A /* LaunchScreen.storyboard in Resources */,
 				1143CB4D1C641A25008F767A /* Assets.xcassets in Resources */,
@@ -366,6 +373,7 @@
 				116A07641C7572D20068F39A /* GameCompleteViewController.swift in Sources */,
 				11687BBA1C64427800FA6720 /* LevelTwoViewController.swift in Sources */,
 				116A078A1C75B6920068F39A /* LevelOneViewController.swift in Sources */,
+				3A0C56DF1C8409B00021392B /* LevelCompleteViewController.swift in Sources */,
 				1143CB461C641A25008F767A /* AppDelegate.swift in Sources */,
 				11687BCA1C64491C00FA6720 /* SimpleMovieTableViewCell.swift in Sources */,
 				11687BA61C642F1700FA6720 /* HomeViewController.swift in Sources */,

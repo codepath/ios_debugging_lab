@@ -12,10 +12,12 @@ class GameLevel: NSObject {
     var number: Int
     var viewController: GameLevelViewController
     var detailedDescription: String
+    var accentColor: UIColor
 
-    init(number: Int, viewController: GameLevelViewController, detailedDescription: String) {
+    init(number: Int, viewController: GameLevelViewController, detailedDescription: String, accentColor: UIColor) {
         self.number = number
         self.viewController = viewController
         self.detailedDescription = detailedDescription
+        self.accentColor = accentColor
     }
 }
